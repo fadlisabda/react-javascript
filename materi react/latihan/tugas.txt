@@ -1,0 +1,12 @@
+2komponen props beda=button dan text
+
+tambah
+kurang
+reset 
+tampilan angka
+
+
+>10 done
+<0 done
+saat done hanya reset yg bisa di klik
+setelah klik reset jadi tidak bisa di klik resetnya

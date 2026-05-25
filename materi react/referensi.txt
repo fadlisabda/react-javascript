@@ -1,0 +1,101 @@
+react wpu
+vidio1
+https://id.react.dev/
+https://react.dev/
+https://github.com/reactjs/id.react.dev/issues/330
+https://github.com/sandhikagalih/belajar-react-untuk-pemula
+https://react.dev/community/videos
+https://react.dev/learn/installation=react cdn
+
+vidio2(react local)
+https://vite.dev/guide/
+https://vite.dev/guide/why
+npm install -g pnpm
+pnpm create vite my-react-app --template react=langsung pakai tanpa tanya
+pnpm install=package.json
+pnpm run dev=live reload atau npm run dev -- --host --port 3000
+pnpm run build
+
+react vip
+vidio1 pengenalan
+https://github.com/enaqx/awesome-react
+https://ifelse.io/2018/07/04/a-guide-to-the-react-ecosystem/
+
+vidio3 components-and-props
+https://legacy.reactjs.org/docs/components-and-props.html
+
+vidio4 atomicdesign
+https://atomicdesign.bradfrost.com/chapter-2/
+components->elements(atoms&molecules)->fragments->layouts->pages(nama file huruf kecil)
+
+vidio6 reactrouter
+https://reactrouter.com/
+pnpm i react-router-dom
+
+vidio 8 nested component
+freepik
+
+10.Event Handler
+formlogin.jsx
+const handleLogin = (event) => {
+ event.preventDefault();
+ localStorage.setItem("email", event.target.email.value);
+ localStorage.setItem("password", event.target.password.value);
+ window.location.href = "/products";
+};
+<form onSubmit={handleLogin}></form>
+<Fragment></Fragment> atau <></>mengatasi return() hanya boleh 1 parent/div
+const email=localStorage.getItem("email"); 
+const handleLogout = () => {
+ localStorage.removeItem("email");
+ localStorage.removeItem("password");
+ window.location.href = "/login";
+};
+<Button onClick={handleLogout}>Logout</Button>
+
+vidio 13 Lifecycle
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+vidio 16 get data api
+https://fakestoreapi.com/
+npm i axios,swr
+
+vidio 17 post data api
+cek api johnd m38rmF$ untuk mendapatkan data token dll
+https://fakestoreapi.com/
+jwt.io token
+npm i jwt decode token
+
+vidio 18 custom hooks
+nama file pakai use
+
+vidio 20 redux state management
+redux.js.org
+npm i redux
+https://paulonteri.com/thoughts/react-redux
+node redux
+
+vidio 21 redux toolkit
+npm i @reduxjs/toolkit
+node toolkit/slice
+
+vidio 22 implementasi react redux
+npm i react-redux
+
+vidio 23 usecontext
+https://react.dev/learn/passing-data-deeply-with-context
+
+vidio 1 lanjutan useidhooks
+react.dev/reference/react/useId
+pnpm run preview
+
+vidio 2 lanjutan memo
+react.dev/reference/react/memo
+
+vidio 3 lanjutan usememo
+react.dev/reference/react/useMemo
+
+vidio 4 lanjutan usecallback
+react.dev/reference/react/useCallback
+
+

@@ -1,0 +1,4 @@
+yang di input tidak ada
+tidak input
+link fetch salah
+api key salah

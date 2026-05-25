@@ -1,0 +1,17 @@
+import { useEffect } from "react";
+import { getUsername } from "../services/auth.service";
+import { useState } from "react";
+
+export const useLogin = () => {
+  const [username, setUsername] = useState("");
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      setUsername(getUsername(token));
+    } else {
+      window.location.href = "/";
+    }
+  }, []);
+
+  return username;
+};

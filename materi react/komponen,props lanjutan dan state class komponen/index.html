@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // counter.jsx
+      class Counter extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            count: 0,
+          };
+        }
+        render() {
+          return (
+            <div>
+              <h1>{this.state.count}</h1>
+              <button onClick={() => this.setState({ count: this.state.count + 1 })}>+</button>
+            </div>
+          );
+        }
+      }
+      // products.jsx
+      // <Counter></Counter>;
+
+      const Button = (props) => {
+        const { children = "kosong", variant = "bg-white" } = props;
+        return (
+          <button type="submit" className={`${variant}`}>
+            {children}
+          </button>
+        );
+      };
+      function MyApp() {
+        return (
+          <div>
+            <Button variant="bg-blue-500">Login</Button>
+            <Button variant="bg-cyan-500">Logout</Button>
+            <Button></Button>
+          </div>
+        );
+      }
+
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+      root.render(<MyApp />);
+    </script>
+  </body>
+</html>

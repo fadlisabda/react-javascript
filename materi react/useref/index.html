@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // product.jsx useref beda ditampilan
+      const cartRef = useRef(
+        // [
+        // {
+        //   id: 1,
+        //   qty: 1,
+        // },
+        // ]
+        JSON.parse(localStorage.getItem("cart")) || []
+      );
+      const handleAddToCartRef = (id) => {
+        cartRef.current = [...cartRef.current, { id, qty: 1 }];
+        localStorage.setItem("cart", JSON.stringify(cartRef.current));
+      };
+      <CardProduct.Footer handleAddToCart={handleAddToCartRef} />;
+      cartRef.current.map((item) => console.log(item.id));
+    </script>
+  </body>
+</html>

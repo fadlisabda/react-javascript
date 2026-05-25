@@ -1,0 +1,23 @@
+[
+  {
+    "nama": "Fhadly",
+    "npm": "183510802",
+    "email": "fadli@yahoo.com",
+    "jurusan": "Teknik Informatika",
+    "idDosenWali": 1
+  },
+  {
+    "nama": "Sabda",
+    "npm": "183510803",
+    "email": "sabda@yahoo.com",
+    "jurusan": "Teknik Mesin",
+    "idDosenWali": 2
+  },
+  {
+    "nama": "Dinov",
+    "npm": "183510804",
+    "email": "dinov@yahoo.com",
+    "jurusan": "Teknik Sipil",
+    "idDosenWali": 3
+  }
+]
