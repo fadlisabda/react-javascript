@@ -1,0 +1,12 @@
+vidio 1 lanjutan useidhooks
+react.dev/reference/react/useId
+pnpm run preview
+
+vidio 2 lanjutan memo
+react.dev/reference/react/memo
+
+vidio 3 lanjutan usememo
+react.dev/reference/react/useMemo
+
+vidio 4 lanjutan usecallback
+react.dev/reference/react/useCallback
